@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import {
   Collapse,
   Navbar,
@@ -7,52 +8,56 @@ import {
   Nav,
   NavItem,
   NavLink,
-} from 'reactstrap';
-import logo from '../../assets/images/logo.png';
-import OrderButton from '../../components/Button/orderButton';
-import './index.css';
-const Example = props => {
+} from "reactstrap";
+import logo from "../../assets/images/logo.png";
+import OrderButton from "../../components/Button/orderButton";
+import "./index.css";
+const Example = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const toggle = () => setIsOpen(!isOpen);
   return (
     <>
-      <Navbar color='transparent' expand='md'>
-        <div className='container mt-3 mb-3'>
-          <NavbarBrand href='/'>
+      <Navbar color="transparent" expand="md">
+        <div className="container mt-3 mb-3">
+          <NavbarBrand href="/">
             <img src={logo} />
           </NavbarBrand>
-          <NavbarToggler onClick={toggle} className='nav__toggle' transparent />
+          <NavbarToggler onClick={toggle} className="nav__toggle" transparent />
           <Collapse isOpen={isOpen} navbar>
-            <Nav className='mr-auto' navbar>
+            <Nav className="mr-auto" navbar>
               <NavItem>
-                <NavLink href='/components/' className='mr-3 ml-3 nav__link'>
-                  Home
-                </NavLink>
+                <Link to="/">
+                  <NavLink href="/components/" className="mr-3 ml-3 nav__link">
+                    Home
+                  </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
-                <NavLink href='/components/' className='mr-3 ml-3 nav__link'>
+                <NavLink href="/components/" className="mr-3 ml-3 nav__link">
                   Wash & fold
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href='/components/' className='mr-3 ml-3 nav__link'>
+                <NavLink href="/components/" className="mr-3 ml-3 nav__link">
                   Clean & Press
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href='/components/' className='mr-3 ml-3 nav__link '>
+                <NavLink href="/components/" className="mr-3 ml-3 nav__link ">
                   Help
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href='/components/' className='mr-3 ml-3 nav__link'>
+                <NavLink href="/components/" className="mr-3 ml-3 nav__link">
                   Pricing
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href='/components/' className='mr-3 ml-3 nav__link'>
-                  About
-                </NavLink>
+                <Link to="/about">
+                  <NavLink href="/components/" className="mr-3 ml-3 nav__link">
+                    About
+                  </NavLink>
+                </Link>
               </NavItem>
             </Nav>
             <OrderButton />

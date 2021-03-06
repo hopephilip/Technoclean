@@ -6,4 +6,5 @@
   --main-light: #fff;
   --main-dark: #000000;
   --main-primary-fade: rgb(37, 146, 184, 0.85);
+  --main-primary-light: rgba(37, 150, 190, 0.2);
 }

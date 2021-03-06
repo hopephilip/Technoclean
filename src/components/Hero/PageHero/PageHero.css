@@ -1,0 +1,12 @@
+.page-hero {
+  width: 50%;
+  margin: 0 auto;
+  padding-bottom: 80px;
+}
+
+.page-hero__header {
+  font-size: 45px;
+  line-height: 52px;
+  text-align: center;
+  font-weight: bold;
+}
