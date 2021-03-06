@@ -1,12 +1,12 @@
-import React from 'react';
-import HomeHero from '../Hero/homeHero';
-import Example from '../Nav';
-import './header.css';
-function Header() {
+import React from "react";
+import Example from "../Nav";
+import "./header.css";
+
+function Header({ children, home }) {
   return (
-    <div className='header'>
+    <div className={`header ${!home ? "header--light" : ""}`}>
       <Example />
-      <HomeHero />
+      {children}
     </div>
   );
 }

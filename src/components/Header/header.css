@@ -1,3 +1,15 @@
 .header {
   background: var(--main-primary);
 }
+
+.header--light {
+  background: var(--main-primary-light);
+}
+
+.header--light .nav-link {
+  color: var(--main-primary);
+}
+
+.header--light .nav-link:hover {
+  color: var(--main-light);
+}
