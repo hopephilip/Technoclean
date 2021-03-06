@@ -1,0 +1,12 @@
+.nav__link {
+  color: #fff;
+  text-align: left;
+  font: normal normal normal 16px Ubuntu;
+  letter-spacing: 0px;
+  color: var(--main-light);
+  opacity: 1;
+}
+.nav__toggle {
+  background-color: transparent;
+  color: #fff;
+}

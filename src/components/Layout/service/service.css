@@ -1,0 +1,10 @@
+.service__description {
+  margin-top: 15px;
+}
+.service__paragraph {
+  margin-top: 20px;
+  font: normal normal normal 16px/28px Ubuntu;
+  letter-spacing: 0px;
+  color: var(--main-dark);
+  opacity: 1;
+}

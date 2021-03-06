@@ -1,0 +1,7 @@
+#order-btn {
+  color: var(--main-primary);
+}
+.phone-btn {
+  display: flex;
+  flex-direction: column;
+}

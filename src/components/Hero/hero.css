@@ -1,0 +1,54 @@
+.home__text {
+  text-align: left;
+  color: var(--main-light);
+  margin-top: 100px;
+}
+.hero__content {
+  padding-bottom: 60px;
+}
+.home__heading {
+  text-transform: capitalize;
+  font: normal normal medium 60px/85px Ubuntu;
+  letter-spacing: 1.8px;
+  opacity: 1;
+  font-size: 45px;
+}
+.home__pararaph {
+  font: normal normal normal 18px/29px Ubuntu;
+  letter-spacing: 0px;
+  opacity: 1;
+}
+.hero__img {
+  width: 100%;
+  object-fit: fill;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+.home__body {
+  background: var(--main-light);
+  width: 100%;
+}
+.order__hero {
+  background-image: linear-gradient(
+      var(--main-primary-fade),
+      var(--main-primary-fade)
+    ),
+    url(../../assets/images/machine.png);
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding: 60px;
+  color: var(--main-light);
+  text-align: left;
+}
+.order__hero-line {
+  border-left: 6px solid var(--main-light);
+  height: 220px;
+}
+.order__img {
+  position: relative;
+  top: -130px;
+}
