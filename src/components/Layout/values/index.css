@@ -1,7 +1,8 @@
-.values__image {
+.values__image,
+.values__image img {
   height: 400px;
 }
 
-.values__image img {
-    height: 100%;
+.about__content--reverse {
+  flex-direction: row-reverse;
 }

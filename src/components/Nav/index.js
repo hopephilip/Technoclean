@@ -27,15 +27,17 @@ const Example = (props) => {
             <Nav className="mr-auto" navbar>
               <NavItem>
                 <Link to="/">
-                  <NavLink href="/components/" className="mr-3 ml-3 nav__link">
+                  <NavLink href="/" className="mr-3 ml-3 nav__link">
                     Home
                   </NavLink>
                 </Link>
               </NavItem>
               <NavItem>
-                <NavLink href="/components/" className="mr-3 ml-3 nav__link">
-                  Wash & fold
-                </NavLink>
+                <Link to="/wash">
+                  <NavLink href="/wash" className="mr-3 ml-3 nav__link">
+                    Wash & fold
+                  </NavLink>
+                </Link>
               </NavItem>
               <NavItem>
                 <NavLink href="/components/" className="mr-3 ml-3 nav__link">
@@ -54,7 +56,7 @@ const Example = (props) => {
               </NavItem>
               <NavItem>
                 <Link to="/about">
-                  <NavLink href="/components/" className="mr-3 ml-3 nav__link">
+                  <NavLink href="/about" className="mr-3 ml-3 nav__link">
                     About
                   </NavLink>
                 </Link>
