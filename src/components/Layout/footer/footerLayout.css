@@ -1,0 +1,7 @@
+.footer__description {
+  color: var(--main-light-fade);
+  opacity: 0.9;
+}
+.footer__heading {
+  color: var(--main-light);
+}
